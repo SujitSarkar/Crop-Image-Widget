@@ -32,8 +32,8 @@ class AppPermissionHandler{
       } else if (result == PermissionStatus.limited) {
         return true;
       }else {
-        // showToast('Permission Denied!');
-        // return false;
+        debugPrint('Permission Denied!');
+        return false;
         return true;
       }
     }
